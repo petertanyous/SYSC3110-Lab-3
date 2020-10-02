@@ -18,10 +18,14 @@ public class AddressBook {
             }
         }
     }
+    public void printFirstName(){
+        System.out.println(budds.get(0).getName());
+    }
     public static void main(String[] args){
         BuddyInfo buddy = new BuddyInfo("Tom") ;
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
+        addressBook.printFirstName();
         addressBook.removeBuddy(buddy);
         addressBook.addBuddy(buddy);
     }
